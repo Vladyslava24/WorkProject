@@ -1,11 +1,27 @@
 package ua.kpi.tef;
 
 public class Point {
-    private int x;
-    private int y;
+    private /*int*/ double x;
+    private /*int*/ double y;
+
+    public double getDoubleX() {
+        return x;
+    }
+
+    public void setDoubleX(double x) {
+        this.x = x;
+    }
+
+    public double getDoubleY() {
+        return y;
+    }
+
+    public void setDoubleY(double y) {
+        this.y = y;
+    }
 
     public int getX() {
-        return x;
+        return (int)x;
     }
 
     public void setX(int x) {
@@ -13,7 +29,7 @@ public class Point {
     }
 
     public int getY() {
-        return y;
+        return (int)y;
     }
 
     public void setY(int y) {
